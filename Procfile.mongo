@@ -1,0 +1,2 @@
+node1: time ruby mongo.rb 0
+node2: time ruby mongo.rb 1000000

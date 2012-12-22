@@ -1,0 +1,37 @@
+== RedisVsMongodbPerformanceTest
+
+Redis Vs Mongodb Performance Test.
+
+====How to run redis test
+   $ ruby redis.rb
+
+Output
+          user     system      total        real
+	redis: 12.750000   2.140000  14.890000 ( 25.930239)   
+
+====How to run mongodb test
+   $ ruby mongodb.rb
+
+Output
+    	   user     system      total        real
+	mongodb: 48.710000   4.800000  53.510000 (221.745161)
+
+
+====How to run redis and mongodb test
+   $ ruby combined.rb
+
+Output
+      	 user     system      total        real
+	redis: 12.950000   2.180000  15.130000 ( 55.203107)
+	mongodb: 46.590000   4.410000  41.000000 ( 203.716785)
+
+
+====How to run multiple redis test instances
+   $ foreman start --procfile=Procfile.redis
+
+
+
+====How to run multiple mongodb test instances
+   $ foreman start --procfile=Procfile.mongo
+
+

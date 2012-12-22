@@ -1,0 +1,2 @@
+node1: time ruby redis.rb 0
+node2: time ruby redis.rb 1000000
